@@ -86,5 +86,9 @@ p{
       position:static;
       transform: rotate(0);
     }
+     .fridge{
+      margin-top:45px;
+    }
+      
 
   }
