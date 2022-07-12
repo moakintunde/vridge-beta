@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Create new account</title>
+  <meta name="author" content="Mohammed Akintunde">
+
+  <link rel="icon" href="./images/icon-baby.png">
+
+  <!--    Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--    Bootstrap css files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--    Custom css files-->
+  <link rel="stylesheet" href="./css/index-style.css">
+  
+
+  <!--    Font Awesome-->
+  <script src="https://kit.fontawesome.com/3d21c8498e.js" crossorigin="anonymous"></script>
+
+  <!--    Bootstrap js files-->
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<section id="title">
+    <div class="container-fluid new-user">
+      
+        
+        <!-- content -->
+        <div class="log-form nu-form">
+         
+        
+          <a class="navbar-brand text-success" href="./index.html" style="font-size:1.5rem;">Vridge</a>
+          <h2 class="" style="padding-top: 10px;text-align: left;"> <strong>Create an account</strong> </h2>
+          <p class="text-dark">Already have an account? <a class="text-success" href="./login.html">Sign in</a> </p>
+          
+          <!-- sign up form -->
+          
+          <form class="needs-validation" novalidate action="./profile.html">
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustomemail">Email</label>
+                <input type="email" class="form-control" id="validationCustomemail" placeholder="user@email.com" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" placeholder="Enter password" name="psw" required>
+              </div>
+              <div class="col-md-6">
+                <label for="psw-repeat">Password</label>
+                <input type="password" class="form-control" placeholder="Repeat password" name="psw-repeat" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            </div>
+
+            <div class="form-row">
+              
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Country</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="country" required>
+                <div class="invalid-feedback">
+                  Please provide a valid country.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  I agree that all information entered are correct.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-success" type="submit">Create account</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+          
+        </div>
+        
+            
+
+    </div>
+</section>
+    
+
+<!-- Footer -->
+
+<footer id="footer">
+    <a href="#"><i href="#" class="social-icon fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="social-icon fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="social-icon fa-brands fa-instagram"></i></a>
+    <a href="./content.html"><i class="social-icon fa-solid fa-envelope"></i></a>
+
+    <p>© Copyright Vridge</p>
+
+</footer>
+
+
+</body>
+
+</html>
+
+  
+
+  
+  
